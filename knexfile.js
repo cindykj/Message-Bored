@@ -5,17 +5,17 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host : 'localhose',
+      host : 'localhost',
       user : 'bored',
       password : 'password',
       database : 'message_bored',
       charset: 'utf8'
     },
     migrations: {
-      directory: __dirname + '/knex/migrations',
+      directory: __dirname + '/db/migrations',
     },
     seeds: {
-      directory: __dirname + '/knex/seeds'
+      directory: __dirname + '/db/seeds'
   },
 
   staging: {
@@ -50,4 +50,5 @@ module.exports = {
     }
   }
 
+}
 };
