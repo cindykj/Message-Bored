@@ -1,15 +1,9 @@
 const bookshelf = require('./bookshelf');
 
-class User extends bookshelf.Model {
-  get tableName() { return 'users' }
+class Message extends bookshelf.Model {
+  get tableName() { return 'messages' }
   get hasTimestamps() { return true }
-
-
-//   messages() {
-//     returns this.hasMany(Message);
-//   }
-// }
-
+}
 
 // class User extends bookshelf.Model {
 //   get tableName() { return 'users' }
@@ -19,6 +13,6 @@ class User extends bookshelf.Model {
 //     // returns.hasMany(Gallery);
 //     return this.belongsTo(User)
 //   }
-}
+// }
 
-module.exports = User;
+module.exports = Message;

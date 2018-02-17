@@ -1,0 +1,18 @@
+
+<h1>{{ 'Hello' + 'Users' + 'Page' }}</h1>
+<ul>
+  <li ng-repeat="user in users">
+    {{ 'User: ' + user.name }} 
+  </li>
+</ul>
+<br>
+
+<form> 
+    <!-- remove action in form, otherwise keeps reloading -->
+    <input type="text" ng-model="newUser.name">
+    <br>
+
+    <button ng-click="addUser()">Add User</button>
+  </form>
+
+
