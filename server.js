@@ -35,9 +35,6 @@ app.use('/api/users', usersRoutes);
 app.use('/api/topics', topicsRoutes);
 app.use('/api/messages', messagesRoutes);
 
-
-
-
 app.get('/*', (req, res) => {
   var options = {
     root: __dirname + '/public',

@@ -14,11 +14,6 @@ angular.module(`messageBored`)
 }])
 
 
-
-
-
-
-
 /*
 angular.module('myApp')
 .controller('BooksController', 
