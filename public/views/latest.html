@@ -1,0 +1,14 @@
+<h1>Latest Messages</h1>
+
+<a ng-href="/messages/latest">Messages</a>
+
+<h3>messages</h3>
+
+  <ul>
+      <li ng-repeat="message in messages">
+
+          <a ng-href="/messages/latest">{{message.body}}</a> <!--change this later-->
+          <!-- : {{ topic.created_by }}  -->
+      </li>
+  </ul>
+

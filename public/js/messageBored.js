@@ -12,6 +12,10 @@ angular.module('messageBored')
       controller: 'UserController',
       templateUrl: '/views/users.html'
     })
+    .when(`/messages/latest`, {
+      controller: 'MessagesController',
+      templateUrl: '/views/latest.html'
+    })
 
     $locationProvider.html5Mode(true); //where is user based on browser url; html5 does not require '#'
 });

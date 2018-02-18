@@ -6,7 +6,8 @@
 
   <ul>
       <li ng-repeat="topic in topics">
-        {{ topic.name }} : {{ topic.created_by }}
+          <a href="/messages/latest">{{topic.name}}</a> <!--change this later !-->
+          : {{ topic.created_by }} 
       </li>
   </ul>
 

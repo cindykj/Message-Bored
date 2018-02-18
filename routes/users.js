@@ -33,11 +33,22 @@ router.route(`/`)
 
 //GET USER BY ID
 
-router.route(`/:id`)
+router.route(`/users/:id`)
 .get((req, res) => {
   console.log('reeeeq', req.body)
 })
 
+
+// .get((req, res) => {
+//   return new Gallery()
+//     .where({
+//       id: req.params.id
+//     })
+//     .fetch()
+//     .then(result => {
+//       return res.render('templates/gallery/edit', result.attributes) //need to reference edit - always an object
+//     })
+// }); //closing for id/edit
 
 // //  GET /gallery/:id to see a single gallery photo -- moved to user.js
 // router.route('/:id')

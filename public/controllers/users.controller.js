@@ -1,5 +1,5 @@
 angular.module(`messageBored`)
-.controller(`UserController`, [`$scope`, `UserService`, function ($scope, UserService){
+.controller(`UsersController`, [`$scope`, `UserService`, function ($scope, UserService){
     $scope.users = UserService.getUsers();
     // UserService.fetchUsers(); //whyy??
     $scope.newUser = { name: '' };

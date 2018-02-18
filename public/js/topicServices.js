@@ -16,8 +16,6 @@ angular.module('messageBored')
       return topics;
     }
 
-
-
   // this.getTopics = function () {
   //   return $http.get('/api/topics')
   //   .then(result => {
